@@ -35,8 +35,6 @@ namespace Classroom
             SkinColor = "Blanc";
             px = p1;
             py = p2;
-            
-            
 
         }
 
@@ -50,6 +48,24 @@ namespace Classroom
             G.DrawLine(P, px-25, py+50, px-25, py+75 );
             G.DrawLine(P, px - 25, py + 75, px + 25 , py +75);
             G.DrawLine(P, px + 25, py + 75, px +25, py );
+
+            // Create string to draw.
+            String drawString = LastName + ".";
+
+            // Create font and brush.
+            Font drawFont = new Font("Arial", 11);
+            SolidBrush drawBrush = new SolidBrush(Color.Black);
+
+            // Create point for upper-left corner of drawing.
+            float x = px + 130;
+            float y = py + 60;
+
+            // Set format of string.
+            StringFormat drawFormat = new StringFormat();
+            drawFormat.FormatFlags = StringFormatFlags.DirectionRightToLeft;
+
+            // Draw string to screen.
+            G.DrawString(drawString, drawFont, drawBrush, x, y, drawFormat);
         }
     }
 }

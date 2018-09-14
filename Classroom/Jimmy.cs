@@ -33,9 +33,14 @@ namespace Classroom
         //Method
         public void Draw(Graphics G)
         {
+            String drawString = "JCD";
+            Font drawFont = new Font("Arial", 10);
+            SolidBrush drawBrush = new SolidBrush(Color.Black);
+
             Image newImage = Image.FromFile("1.PNG");
             Pen P = new Pen(Color.Red);
             G.DrawImage(newImage, px, py);
+            G.DrawString(drawString, drawFont, drawBrush, px, py);
         }
         public void Play() {}
         public void GoOut() {}

@@ -45,7 +45,7 @@ namespace Classroom
 
         public void Draw(Graphics G)
         {
-            G.Clear(Color.White);
+            
             Rectangle rectangle = new Rectangle(x,y,width,height);
             Pen P = new Pen(Color.Black);
             G.DrawRectangle(P, rectangle);

@@ -35,9 +35,21 @@ namespace Classroom
 
         public void Draw(Graphics G)
         {
+            // Create color pen.
             Pen PenBlue = new Pen(Color.RoyalBlue);
             Pen PenBlack = new Pen(Color.Black);
             Pen PenRed = new Pen(Color.Red);
+
+            // Create string to draw.
+            String Text = "Jeremy";
+
+            // Create font and brush.
+            Font drawFont = new Font("Arial", 16);
+            SolidBrush drawBrush = new SolidBrush(Color.Black);
+
+            // Set format of string.
+            StringFormat drawFormat = new StringFormat();
+            drawFormat.Alignment = StringAlignment.Center;
 
             // Create points that define curve.
             Point point1 = new Point(px + 60, py + 80);
@@ -50,6 +62,7 @@ namespace Classroom
             G.DrawArc(PenBlack, px + 85, py + 50, px, py, 90, 180); // nose
             G.DrawCurve(PenRed, curvePoints, tension); // mouth down
             G.DrawLine(PenRed, px + 60, py + 80, px + 120, py + 80); //mouth up
+            G.DrawString(Text, drawFont, drawBrush, px+90, py + 100, drawFormat);
         }
 
     }

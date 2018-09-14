@@ -13,22 +13,73 @@ namespace Classroom
     {
         Graphics G;
 
-        Cyril theCyril = new Cyril(10, 10);
-        /*Jimmy theJimmy = new Jimmy(50, 10);
-        Dylan theDylan = new Dylan(90, 10);*/
+        Sylvain theSylvain ;
+        Jimmy theJimmy;
+        Dylan theDylan;
+        Jeremy theJeremy;
+
+        Leo theLeo ;
+        Eqbal theEqbal;
+        Benoit theBenoit;
+        Ilan theIlan;
+
+        Filipe theFilipe;
+        Joao theJoao;
+        Jason theJason;
+
+        Quentin theQuentin;
+        Dorian theDorian;
+        Sacha theSacha;
+        Cyril theCyril;
 
         public Form1()
         {
             InitializeComponent();
+
             this.Paint += new PaintEventHandler(MyPaint);
+            theSylvain = new Sylvain(10, 10);
+            theJimmy = new Jimmy(220, 10);
+            theDylan = new Dylan(430, 10);
+            theJeremy = new Jeremy(640, 10);
+
+            theLeo = new Leo(10, 220);
+            theEqbal = new Eqbal(220, 220);
+            theBenoit = new Benoit(430, 220);
+            //theIlan = new Ilan(640, 220);
+            theIlan = new Ilan();
+
+            //theFilipe = new Filipe(10, 430);
+            theFilipe = new Filipe();
+            theJoao = new Joao(220, 430);
+            theJason = new Jason(430, 430);
+
+            theQuentin = new Quentin(10, 640);
+            theDorian = new Dorian(220, 640);
+            theSacha = new Sacha(430, 640);
+            theCyril = new Cyril(640, 640);
         }
 
         private void MyPaint(object sender, PaintEventArgs e)
         {
             G = e.Graphics;
+            theSylvain.Draw(G);
+            theJimmy.Draw(G);
+            theDylan.draw(G);
+            theJeremy.Draw(G);
+
+            theLeo.Draw(G);
+            theEqbal.draw(G);
+            theBenoit.Draw(G);
+            theIlan.draw(G);
+
+            theFilipe.Draw(G);
+            theJoao.Draw(G);
+            theJason.Draw(G);
+
+            theQuentin.Draw(G);
+            theDorian.Draw(G);
+            theSacha.Draw(G);
             theCyril.Draw(G);
-            /*theJimmy.Draw(G);
-            theDylan.Draw(G);*/
         }
 
         private void cmdDessiner_Click(object sender, EventArgs e)
