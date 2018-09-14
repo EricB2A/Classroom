@@ -82,12 +82,30 @@ namespace Classroom
             theCyril.Draw(G);
         }
 
-        private void cmdDessiner_Click(object sender, EventArgs e)
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            Cursor = Cursors.WaitCursor;
-            this.Refresh();
-            Cursor = Cursors.Arrow;
-        }
+            /*
+            theSylvain.DoSomething();
+            theJimmy.DoSomething();
+            theDylan.DoSomething();
+            theJeremy.DoSomething();
 
+            theLeo.DoSomething();
+            theEqbal.DoSomething();
+            theBenoit.DoSomething();
+            theIlan.DoSomething();
+
+            theFilipe.DoSomething();
+            theJoao.DoSomething();
+            theJason.DoSomething();
+
+            theQuentin.DoSomething();
+            theDorian.DoSomething();
+            theSacha.DoSomething();
+            theCyril.DoSomething();
+            */
+
+            this.Refresh();
+        }
     }
 }

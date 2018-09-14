@@ -28,33 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmdDessiner = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // cmdDessiner
-            // 
-            this.cmdDessiner.Location = new System.Drawing.Point(525, 2);
-            this.cmdDessiner.Name = "cmdDessiner";
-            this.cmdDessiner.Size = new System.Drawing.Size(99, 23);
-            this.cmdDessiner.TabIndex = 11;
-            this.cmdDessiner.Text = "Dessiner";
-            this.cmdDessiner.UseVisualStyleBackColor = true;
-            this.cmdDessiner.Click += new System.EventHandler(this.cmdDessiner_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 462);
-            this.Controls.Add(this.cmdDessiner);
+            this.ClientSize = new System.Drawing.Size(884, 861);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button cmdDessiner;
     }
 }
 
