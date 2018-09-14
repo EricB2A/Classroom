@@ -20,9 +20,11 @@ namespace Classroom
         //Method
         public void Draw(Graphics G)
         { 
-            Pen P = new Pen(Color.Red);
+            Font drawfont = new Font("Arial", 10);
+            SolidBrush drawbrush = new SolidBrush(Color.Black);
             Image newImage = Image.FromFile( "sylvain_gandini.bmp");
-            G.DrawImage(newImage, X, Y);           
+            G.DrawImage(newImage, X, Y);
+            G.DrawString("Sylvain Gandini",drawfont, drawbrush, X,Y+100);          
         }
 
     }
