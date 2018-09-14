@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
-namespace WindowsFormsApp1
+namespace Classroom
 {
     class Ilan
     {
@@ -28,8 +29,19 @@ namespace WindowsFormsApp1
         public string feeling;
         
 
-        public string draw() {
-            return;
+        public void draw(Graphics G) {
+
+            Pen P = new Pen(Color.Black);
+            G.DrawLine(P, 10, 10, 50, 10);
+            G.DrawLine(P, 50, 10, 50, 50);
+            G.DrawLine(P, 50, 50, 10, 50);
+            G.DrawLine(P, 10, 50, 10, 10);
+            
+
+
+
+
+
         }
 
         public Ilan()
