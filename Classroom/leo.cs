@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace Classroom
 {
@@ -50,6 +51,24 @@ namespace Classroom
             G.DrawEllipse(P, px+46,py+60,26,60);
             G.DrawEllipse(P, px+80,py+150,26,30);
             
+        }
+
+        public void DoSomething(Graphics G)
+        {
+            G.TranslateTransform(10,10);
+            
+            
+
+            /*
+            DialogResult dialogResult = MessageBox.Show("Bonjour, la SNCF vous souhaite une bonne année 2010.", "SNCF VIE", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                MessageBox.Show("Merci à vous aussi","Très très bien", MessageBoxButtons.YesNo);
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                MessageBox.Show("Oui nous sommes toujours en retard tel une vraie compagnie de train.","Retard", MessageBoxButtons.YesNo);
+            }*/
         }
 
         public void Walk() { }
