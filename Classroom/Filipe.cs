@@ -22,6 +22,7 @@ namespace Classroom
 
         public int x;
         public int y;
+        public string jesus = "Jesus";
 
         public Filipe(int p1, int p2)
         {
@@ -40,8 +41,7 @@ namespace Classroom
         }
 
         public void Draw(Graphics G)
-        {
-
+        {           
             Pen pen = new Pen(Color.DarkViolet);
 
             G.DrawLine(pen, x, y, x+125/2, y); //x
@@ -54,7 +54,7 @@ namespace Classroom
             G.DrawLine(pen, x+50/2, y+125/2, x+70/2 , y+125/2); //x
 
             // Create string to draw.
-            String drawString = "Jesus";
+            String drawString = jesus;
 
             // Create font and brush.
             Font drawFont = new Font("Arial", 16);
@@ -72,7 +72,9 @@ namespace Classroom
             G.DrawString(drawString, drawFont, drawBrush, x, y, drawFormat);
         }
 
-       
-
+       public void DoSomething()
+        {
+            jesus = "Dab Jesus";
+        }
     }
 }
