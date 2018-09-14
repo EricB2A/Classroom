@@ -10,7 +10,7 @@ namespace Classroom
 
     class Jason
     {
-
+        int i = 0;
         public string HairColor;
         public string EyesColor;
         public DateTime Birthday;
@@ -48,6 +48,29 @@ namespace Classroom
             PosX = px;
             PosY = py;
             
+        }
+
+        public void DoSomething()
+        {
+            switch (i)
+            {
+                case 1:
+
+                System.Windows.Forms.MessageBox.Show("La Kpop c'est bien...");
+                    break;
+                case 2:
+                    System.Windows.Forms.MessageBox.Show("C'est pas des chinois bordel...");
+                    break;
+                case 3:
+                    System.Windows.Forms.MessageBox.Show("Don't rage my friend... Kpop is bae");
+                    break;
+                default :
+                    System.Windows.Forms.MessageBox.Show("Je pense que la Kpop devrait être plus commercialisée dans le monde");
+                    break;
+            }   
+            
+            
+            i++;
         }
     }
 }

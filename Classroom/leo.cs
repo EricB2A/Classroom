@@ -20,46 +20,35 @@ namespace Classroom
         public DateTime Birthday;
         public string Gender;
         public bool Alive;
-
         public int px;
         public int py;
 
-        public Leo(int _x=300, int _y=400, int _width=200, int _height=100, string personName="Leo")
+        public Leo(int rX, int rY, string personName="Leo")
         {
-            int x = _x;
-            int y = _y;
-            int width = _width;
-            int height = _height;
+            px = rX;
+            py = rY;
             string PersonName = personName;
         }
 
         public void Draw(Graphics G)
         {
-            int x = 10;
-            int y = 20;
-            int width = 100;
-            int height = 50;
+            int width = 200;
+            int height = 200;
 
             Pen P = new Pen(Color.Black);
             SolidBrush B = new SolidBrush(Color.Black);
             Font F = new Font("Arial",14);
 
-            Rectangle rectangle = new Rectangle(x, y, width, height);
+            Rectangle rectangle = new Rectangle(px, py, width, height);
 
-            G.DrawString("Léo Zmoos", F, B, x, y+50);
+            G.DrawString("Léo Zmoos", F, B, px+50, py+210);
 
             G.DrawEllipse(P, rectangle);
-            G.DrawLine(P,rectangle.Width/2,rectangle.Height/2,3,4);
-            G.DrawLine(P,rectangle.Width/2,rectangle.Height/2,15,4);
-            G.DrawLine(P,rectangle.Width/2,rectangle.Height/2,30,4);
-            G.DrawLine(P,rectangle.Width/2,rectangle.Height/2,45,4);
-            G.DrawLine(P,rectangle.Width/2,rectangle.Height/2,60,4);
-            G.DrawLine(P,rectangle.Width/2,rectangle.Height/2,75,4);
-            G.DrawLine(P,rectangle.Width/2,rectangle.Height/2,90,4);
-            G.DrawLine(P,rectangle.Width/2,rectangle.Height/2,120,4);
-            G.DrawRectangle(P, rectangle.Width / 4, rectangle.Height-17, rectangle.Width/4,rectangle.Height/4);
-            G.DrawRectangle(P, rectangle.Width-35, rectangle.Height-17, rectangle.Width/4,rectangle.Height/4);
-            G.DrawArc(P,rectangle,2,3);
+            G.DrawEllipse(P, px+32,py+60,52,60);
+            G.DrawEllipse(P, px+100,py+60,52,60);
+            G.DrawEllipse(P, px+114,py+60,26,60);
+            G.DrawEllipse(P, px+46,py+60,26,60);
+            G.DrawEllipse(P, px+80,py+150,26,30);
             
         }
 
