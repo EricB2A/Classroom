@@ -66,9 +66,9 @@ namespace Classroom
             G.DrawString(Text, drawFont, drawBrush, px+45, py + 110, drawFormat);// Text Jeremy
         }
 
-        public void DoSomething(Graphics G)
+        public void DoSomething()
         {
-            Pen PenRed = new Pen(Color.Red);
+            /*Pen PenRed = new Pen(Color.Red);
 
             // Create points that define curve.
             Point point1 = new Point(px + 25, py + 100); //point of mouth left
@@ -76,7 +76,7 @@ namespace Classroom
             Point point3 = new Point(px + 70, py + 100); //point of mouth right
             Point[] curvePoints = { point1, point2, point3 }; // Array point of mouth
 
-            G.DrawLine(PenRed, px + 25, py + 90, px + 70, py + 90); //mouth up
+            G.DrawLine(PenRed, px + 25, py + 90, px + 70, py + 90); //mouth up*/
         }
     }
 }
