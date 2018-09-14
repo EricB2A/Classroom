@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -24,7 +25,36 @@ namespace Classroom
 
         public Point Position { get; private set; }
 
-        private Form1 form;
+        private PointF[] forme = new PointF[] {
+                new PointF(50, 0),
+                new PointF(100, 0),
+                new PointF(100, 20),
+
+                new PointF(150, 0),
+                new PointF(150, 10),
+                new PointF(100, 30),
+
+                new PointF(100, 50),
+
+                new PointF(90, 50),
+                new PointF(90, 100),
+                new PointF(80, 100),
+                new PointF(80, 50),
+
+                new PointF(70, 50),
+                new PointF(70, 100),
+                new PointF(60, 100),
+                new PointF(60, 50),
+
+                new PointF(50, 50),
+
+                new PointF(50, 30),
+                new PointF(0, 10),
+                new PointF(0, 0),
+                new PointF(50, 20)
+            };
+
+        private bool HandsUp = false;
 
         public Dorian(int px, int py)
         {
@@ -35,80 +65,60 @@ namespace Classroom
             this.HairColor = Color.Orange;
             this.EyesColor = Color.Brown;
             this.BornDate = new DateTime(2000, 5, 22);
-            this.Job = "CFC Informaticien";
+            this.Job = "Informaticien";
             this.Hobbies = new List<string>()
             {
                 "Informatique",
-                "Jeux vidéos"
+                "Jeux vidéos",
+                "Programmation"
             };
 
             this.Position = new Point(px, py);
-            /*this.form = form1;
-
-            this.form.KeyPreview = true;
-            this.form.KeyPress += new KeyPressEventHandler(KeyDown);*/
         }
 
         public void Draw(Graphics G)
         {
-            Pen P = new Pen(this.HairColor);
-            Point[] points = new Point[] {
-                new Point(50, 0),
-                new Point(100, 0),
-                new Point(100, 20),
-            
-                new Point(150, 0),
-                new Point(150, 10),
-                new Point(100, 30),
+            Pen pen = new Pen(this.HairColor, 6);
+            Brush brush = new SolidBrush(this.EyesColor);
 
-                new Point(100, 50),
+            PointF[] formToDraw = new PointF[forme.Count()];
 
-                new Point(90, 50),
-                new Point(90, 100),
-                new Point(80, 100),
-                new Point(80, 50),
-
-                new Point(70, 50),
-                new Point(70, 100),
-                new Point(60, 100),
-                new Point(60, 50),
-
-                new Point(50, 50),
-
-                new Point(50, 30),
-                new Point(0, 10),
-                new Point(0, 0),
-                new Point(50, 20)
-            };
-
-            for (int i = 0; i<points.Count(); i++)
+            for (int i = 0; i < formToDraw.Count(); i++)
             {
-                points[i].X += this.Position.X;
-                points[i].Y += this.Position.Y;
+                formToDraw[i].X = forme[i].X + this.Position.X;
+                formToDraw[i].Y = forme[i].Y + this.Position.Y;
             }
 
-            G.DrawPolygon(P, points);
+            G.DrawPolygon(pen, formToDraw);
+            G.FillPolygon(brush, formToDraw);
         }
 
-        public void KeyDown(object sender, KeyPressEventArgs e)
+        public void DoSomething()
         {
-            if (e.KeyChar == 'd') Move(new Point(5,0));
-            if (e.KeyChar == 'a') Move(new Point(-5, 0));
-            if (e.KeyChar == 'w') Move(new Point(0, -5));
-            if (e.KeyChar == 's') Move(new Point(0, 5));
-
             Random random = new Random();
-            if (e.KeyChar == ' ')
-            {
-                DyeHair(Color.FromArgb(255, random.Next(255), random.Next(255), random.Next(255)));
-                this.form.Refresh();
-            }
-        }
+            DyeHair(Color.FromArgb(255, random.Next(255), random.Next(255), random.Next(255)));
 
-        public void Move(Point direction)
-        {
-            this.Position = new Point(this.Position.X + direction.X, this.Position.Y + direction.Y);
-            this.form.Refresh();
+            this.EyesColor = Color.FromArgb(255, random.Next(255), random.Next(255), random.Next(255));
+            this.Position = new Point(Cursor.Position.X - Form1.ActiveForm.Location.X - 80, Cursor.Position.Y - Form1.ActiveForm.Location.Y - 55);
+
+            HandsUp = !HandsUp;
+
+            if (HandsUp)
+            {
+                this.forme[3] = new PointF(150, 30);
+                this.forme[4] = new PointF(150, 40);
+
+                this.forme[18] = new PointF(0, 30);
+                this.forme[17] = new PointF(0, 40);
+            }
+            else
+            {
+                this.forme[3] = new PointF(150, 0);
+                this.forme[4] = new PointF(150, 10);
+
+                this.forme[18] = new PointF(0, 0);
+                this.forme[17] = new PointF(0, 10);
+            }
         }
 
         public int GetAge()
