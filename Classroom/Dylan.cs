@@ -32,6 +32,9 @@ namespace Classroom
         public void draw(Graphics G)
         {
             Pen P = new Pen(Color.Black);
+            System.Drawing.Font drawFont = new System.Drawing.Font("Arial", 16);
+            System.Drawing.SolidBrush drawBrush = new System.Drawing.SolidBrush(System.Drawing.Color.OrangeRed);
+            System.Drawing.StringFormat drawFormat = new System.Drawing.StringFormat();
 
             G.DrawEllipse(P, px, py, px, py + 100); //Head
             G.DrawEllipse(P, px + 30, py + 50, px / 4, py / 4); //Left eye                  
@@ -43,6 +46,8 @@ namespace Classroom
             G.DrawLine(P, px + 85, py + 142, px + 85, py + 161); //Tooth 
             G.DrawLine(P, px + 115, py + 142, px + 115, py + 161); //Tooth 
             G.DrawLine(P, px + 100, py + 140, px + 100, py + 165); //Tooth 
+
+            G.DrawString("Dylan", drawFont, drawBrush, px + 67, py + 100, drawFormat);
         }
 
         public void eat()
