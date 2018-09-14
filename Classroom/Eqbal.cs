@@ -24,8 +24,7 @@ namespace Classroom
         public string SpokenLanguages;
         private int x;
         private int y;
-      
-
+        private string= Pen(Color)
 
         //constructor
       
@@ -42,11 +41,16 @@ namespace Classroom
 
             G.DrawLine(P,x, y, x, y + 40);
             G.DrawLine(P, x, y, x + 20, y + 20);
+     
             Pen P2 = new Pen(Color.Red);
-
-            G.DrawLine(P2, x+20, y+20, x+30, y - 20);
+            G.DrawLine(P2, x+20, y+20, x+30, y-20);
         }
-
+        public void DoSomething(Graphics G)
+        {
+            Pen P3 = new Pen(Color.Yellow);
+            
+            G.DrawLine(P3, x + 20, y + 20, x + 30, y + 20);
+        }
 
 
     }
