@@ -41,8 +41,12 @@ namespace Classroom
             int height = 50;
 
             Pen P = new Pen(Color.Black);
+            SolidBrush B = new SolidBrush(Color.Black);
+            Font F = new Font("Arial",14);
 
             Rectangle rectangle = new Rectangle(x, y, width, height);
+
+            G.DrawString("Léo Zmoos", F, B, x, y+50);
 
             G.DrawEllipse(P, rectangle);
             G.DrawLine(P,rectangle.Width/2,rectangle.Height/2,3,4);
@@ -56,6 +60,7 @@ namespace Classroom
             G.DrawRectangle(P, rectangle.Width / 4, rectangle.Height-17, rectangle.Width/4,rectangle.Height/4);
             G.DrawRectangle(P, rectangle.Width-35, rectangle.Height-17, rectangle.Width/4,rectangle.Height/4);
             G.DrawArc(P,rectangle,2,3);
+            
         }
 
         public void Walk() { }
