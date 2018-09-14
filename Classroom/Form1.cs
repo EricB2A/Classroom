@@ -13,9 +13,9 @@ namespace Classroom
     {
         Graphics G;
 
-        Sylvain theSylvain = new Sylvain(10, 10);
-        Jimmy theJimmy = new Jimmy(50, 10);
-        Dylan theDylan = new Dylan(90, 10);
+        Cyril theCyril = new Cyril(10, 10);
+        /*Jimmy theJimmy = new Jimmy(50, 10);
+        Dylan theDylan = new Dylan(90, 10);*/
 
         public Form1()
         {
@@ -26,9 +26,9 @@ namespace Classroom
         private void MyPaint(object sender, PaintEventArgs e)
         {
             G = e.Graphics;
-            theSylvain.Draw(G);
-            theJimmy.Draw(G);
-            theDylan.Draw(G);
+            theCyril.Draw(G);
+            /*theJimmy.Draw(G);
+            theDylan.Draw(G);*/
         }
 
         private void cmdDessiner_Click(object sender, EventArgs e)
