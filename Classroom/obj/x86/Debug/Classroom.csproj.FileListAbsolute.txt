@@ -16,3 +16,10 @@ C:\GIT\Classroom\Classroom\obj\x86\Debug\Fractales.exe
 C:\GIT\Classroom\Classroom\obj\x86\Debug\Fractales.pdb
 C:\GIT\Classroom\Classroom\bin\Debug\Fractales.exe
 C:\GIT\Classroom\Classroom\bin\Debug\Fractales.pdb
+C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Classroom.csprojAssemblyReference.cache
+C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Classroom.Form1.resources
+C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Fractales.Properties.Resources.resources
+C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Classroom.csproj.GenerateResource.cache
+C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Classroom.csproj.CoreCompileInputs.cache
+C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Fractales.exe
+C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Fractales.pdb
