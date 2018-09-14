@@ -1,0 +1,27 @@
+C:\Data\CoursCSharp\Exercices\Divers\Fractales\Fractales\Fractales\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\CoursCSharp\Exercices\Divers\Fractales\Fractales\Fractales\obj\x86\Debug\Fractales.Form1.resources
+C:\Data\CoursCSharp\Exercices\Divers\Fractales\Fractales\Fractales\obj\x86\Debug\Fractales.Properties.Resources.resources
+C:\Data\CoursCSharp\Exercices\Divers\Fractales\Fractales\Fractales\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Data\CoursCSharp\Exercices\Divers\Fractales\Fractales\Fractales\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Data\CoursCSharp\Exercices\Divers\Fractales\Fractales\Fractales\bin\Debug\Fractales.exe
+C:\Data\CoursCSharp\Exercices\Divers\Fractales\Fractales\Fractales\bin\Debug\Fractales.pdb
+C:\Data\CoursCSharp\Exercices\Divers\Fractales\Fractales\Fractales\obj\x86\Debug\Fractales.exe
+C:\Data\CoursCSharp\Exercices\Divers\Fractales\Fractales\Fractales\obj\x86\Debug\Fractales.pdb
+C:\Data\CoursCSharp\Exercices\Série Z\Fractales\Fractales\Fractales\obj\x86\Debug\Fractales.exe
+C:\Data\CoursCSharp\Exercices\Série Z\Fractales\Fractales\Fractales\obj\x86\Debug\Fractales.pdb
+C:\Data\CoursCSharp\Exercices\Série Z\Fractales\Fractales\Fractales\bin\Debug\Fractales.exe
+C:\Data\CoursCSharp\Exercices\Série Z\Fractales\Fractales\Fractales\bin\Debug\Fractales.pdb
+C:\Data\CoursCSharp\Exercices\Série Z\Fractales\Fractales\Fractales\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\CoursCSharp\Exercices\Série Z\Fractales\Fractales\Fractales\obj\x86\Debug\Fractales.Form1.resources
+C:\Data\CoursCSharp\Exercices\Série Z\Fractales\Fractales\Fractales\obj\x86\Debug\Fractales.Properties.Resources.resources
+C:\Data\CoursCSharp\Exercices\Série Z\Fractales\Fractales\Fractales\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Data\CoursCSharp\Exercices\Série Z\Fractales\Fractales\Fractales\obj\x86\Debug\GenerateResource.write.1.tlog
+T:\Série Z\Fractales - Copy\Fractales\Fractales\bin\Debug\Fractales.exe
+T:\Série Z\Fractales - Copy\Fractales\Fractales\bin\Debug\Fractales.pdb
+T:\Série Z\Fractales - Copy\Fractales\Fractales\obj\x86\Debug\Fractales.csprojAssemblyReference.cache
+T:\Série Z\Fractales - Copy\Fractales\Fractales\obj\x86\Debug\Fractales.Properties.Resources.resources
+T:\Série Z\Fractales - Copy\Fractales\Fractales\obj\x86\Debug\Fractales.csproj.GenerateResource.cache
+T:\Série Z\Fractales - Copy\Fractales\Fractales\obj\x86\Debug\Fractales.csproj.CoreCompileInputs.cache
+T:\Série Z\Fractales - Copy\Fractales\Fractales\obj\x86\Debug\Fractales.exe
+T:\Série Z\Fractales - Copy\Fractales\Fractales\obj\x86\Debug\Fractales.pdb
+T:\Série Z\Fractales - Copy\Fractales\Fractales\obj\x86\Debug\Classroom.Form1.resources
