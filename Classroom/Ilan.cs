@@ -27,29 +27,30 @@ namespace Classroom
         public string dream;
         public string town;
         public string feeling;
-        
 
-        public void draw(Graphics G) {
-
-            Pen P = new Pen(Color.Black);
-            G.DrawLine(P, 10, 10, 50, 10);
-            G.DrawLine(P, 50, 10, 50, 50);
-            G.DrawLine(P, 50, 50, 10, 50);
-            G.DrawLine(P, 10, 50, 10, 10);
-            
+        public int px;
+        public int py;
 
 
-
-
-
-        }
-
-        public Ilan()
+        public Ilan(int x, int y)
         {
-
+            px = x;
+            py = y;
             sports = new List<string>();
             hobbys = new List<string>();
 
         }
+
+        public void draw(Graphics G) {
+
+            Pen P = new Pen(Color.Black);
+            G.DrawLine(P, px, py, px += 50, py);
+            G.DrawLine(P, px, py, px, py += 50);
+            G.DrawLine(P, px, py, px -= 50, py);
+            G.DrawLine(P, px, py, px, py -= 50);
+            
+        }
+
+        
     }
 }
