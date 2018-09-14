@@ -36,18 +36,20 @@ namespace Classroom
             System.Drawing.SolidBrush drawBrush = new System.Drawing.SolidBrush(System.Drawing.Color.OrangeRed);
             System.Drawing.StringFormat drawFormat = new System.Drawing.StringFormat();
 
-            G.DrawEllipse(P, px, py, px, py + 100); //Head
-            G.DrawEllipse(P, px + 30, py + 50, px / 4, py / 4); //Left eye                  
-            G.DrawEllipse(P, px + 43, py + 50, px / 4 - 25, py / 4); //Left eye
-            G.DrawEllipse(P, px + 120, py + 50, px / 4, py / 4); //Right eye  
-            G.DrawEllipse(P, px + 133, py + 50, px / 4 - 25, py / 4); //Right eye
-            G.DrawEllipse(P, px + 75, py + 140, px / 4, py / 4); //Mouth   
-            G.DrawLine(P, px + 75, py + 153, px + 125, py + 153); //Tooth 
-            G.DrawLine(P, px + 85, py + 142, px + 85, py + 161); //Tooth 
-            G.DrawLine(P, px + 115, py + 142, px + 115, py + 161); //Tooth 
-            G.DrawLine(P, px + 100, py + 140, px + 100, py + 165); //Tooth 
+            G.DrawEllipse(P, px, py, 150, 150); //Head
+            G.DrawEllipse(P, px + 17, py + 40, 50, 25); //Left eye                  
+            G.DrawEllipse(P, px + 30, py + 40, 25, 25); //Left eye
+            G.DrawEllipse(P, px + 87, py + 40, 50, 25); //Right eye  
+            G.DrawEllipse(P, px + 100, py + 40, 25, 25); //Right eye
+            G.DrawEllipse(P, px + 50, py + 100, 50, 25); //Mouth  
+            G.DrawEllipse(P, px + 45, py + 95, 60, 35); //Mouth
+            G.DrawLine(P, px + 51, py + 113, px + 100, py + 113); //Tooth 
+            G.DrawLine(P, px + 60, py + 104, px + 60, py + 123); //Tooth 
+            G.DrawLine(P, px + 70, py + 100, px + 70, py + 125); //Tooth 
+            G.DrawLine(P, px + 80, py + 100, px + 80, py + 125); //Tooth 
+            G.DrawLine(P, px + 90, py + 104, px + 90, py + 123); //Tooth 
 
-            G.DrawString("Dylan", drawFont, drawBrush, px + 67, py + 100, drawFormat);
+            G.DrawString("Dylan", drawFont, drawBrush, px + 135, py + 10, drawFormat);
         }
 
         public void eat()
