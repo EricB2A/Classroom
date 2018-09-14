@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Classroom
@@ -50,6 +51,12 @@ namespace Classroom
             G.DrawLine(P, px + 90, py + 104, px + 90, py + 123); //Tooth 
 
             G.DrawString("Dylan", drawFont, drawBrush, px + 135, py + 10, drawFormat);
+        }
+
+        public void DoSomething()
+        {
+            px = px + 100;
+            py = py + 400;
         }
 
         public void eat()
