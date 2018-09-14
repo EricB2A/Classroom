@@ -20,7 +20,9 @@ namespace Classroom
         public string HairColor;
         public string Gender;
         public string SkinColor;
-
+        private int Click = 0;
+        public string TextToWrite;
+        
 
         public Joao(int p1, int p2)
         {
@@ -35,6 +37,8 @@ namespace Classroom
             SkinColor = "Blanc";
             px = p1;
             py = p2;
+            TextToWrite = LastName;
+            
 
         }
 
@@ -50,7 +54,7 @@ namespace Classroom
             G.DrawLine(P, px + 25, py + 75, px +25, py );
 
             // Create string to draw.
-            String drawString = LastName + ".";
+            String drawString = TextToWrite;
 
             // Create font and brush.
             Font drawFont = new Font("Arial", 11);
@@ -66,6 +70,45 @@ namespace Classroom
 
             // Draw string to screen.
             G.DrawString(drawString, drawFont, drawBrush, x, y, drawFormat);
+        }
+
+        public void DoSomething()
+        {
+
+            Click++;
+            
+            // Create string to draw.
+            switch (Click)
+            {
+                case 1:
+                    TextToWrite = "! Stop touching Me";
+                    break;
+
+                case 2:
+                    TextToWrite = "! I said STOP";
+                    break;
+
+                case 3:
+                    TextToWrite = "Pq**zàrd";
+                    break;
+
+                case 4:
+                    TextToWrite = "Ok, i'm feeling pretty bad right now.";
+                    break;
+
+                case 5:
+                    TextToWrite = "You abused of my pixels";
+                    break;
+
+
+                default:
+                    TextToWrite = "Ok. Bye.";
+                    px -= 20;
+                    break;
+            }
+               
+           
+            
         }
     }
 }
