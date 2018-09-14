@@ -52,11 +52,14 @@ namespace Classroom
 
         public void DoSomething()
         {
+            i++;
             switch (i)
             {
+                  
                 case 1:
 
                 System.Windows.Forms.MessageBox.Show("La Kpop c'est bien...");
+                  
                     break;
                 case 2:
                     System.Windows.Forms.MessageBox.Show("C'est pas des chinois bordel...");
@@ -66,11 +69,12 @@ namespace Classroom
                     break;
                 default :
                     System.Windows.Forms.MessageBox.Show("Je pense que la Kpop devrait être plus commercialisée dans le monde");
+                    
                     break;
             }   
             
             
-            i++;
+
         }
     }
 }
