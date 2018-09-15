@@ -45,11 +45,9 @@ namespace Classroom
             theLeo = new Leo(10, 220);
             theEqbal = new Eqbal(220, 220);
             theBenoit = new Benoit(430, 220);
-            //theIlan = new Ilan(640, 220);
-            theIlan = new Ilan();
-
-            //theFilipe = new Filipe(10, 430);
-            theFilipe = new Filipe();
+            theIlan = new Ilan(640, 220);
+            
+            theFilipe = new Filipe(10, 430);
             theJoao = new Joao(220, 430);
             theJason = new Jason(430, 430);
 
