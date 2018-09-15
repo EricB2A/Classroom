@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace Classroom
 {
@@ -41,6 +42,10 @@ namespace Classroom
 
         public List<string> LastFood { get; private set; }
 
+        public List<string> LastSong { get; private set; } = new List<string>();
+
+        public bool musicPlay = false;
+
         private Bitmap image;
 
         private const int APPCOMMAND_VOLUME_MUTE = 0x80000;
@@ -68,30 +73,71 @@ namespace Classroom
             this.WaterFill = 255;
             this.LastFood = new List<string>() { "Pasta" };
 
-            image = new Bitmap("Quentin.png");
+            image = new Bitmap("Quentin.jpg");
 
             image = this.ReSize(image, 128, 128);
 
+        }
+
+        public void DoSomething(string path = "\\\\sc-dist-sv12\\Echange\\song\\")
+        {
             
 
-            //SoundPlayer player = new SoundPlayer("\\\\sc-dist-sv12\\Echange\\russe.wav");
-            //player.PlayLooping();
-            
+            List<string> files =  Directory.GetFiles(path).ToList();
 
+            string songPath;
+
+            SoundPlayer player = null;
+
+            int x = 0;
+            bool ok = false;
+
+            do
+            {
+                ok = false;
+
+                if (this.LastSong.Contains(files[x]) == false)
+                {
+                    if(player != null)
+                    {
+                        this.musicPlay = false;
+                        Console.WriteLine("stop");
+                        player.Stop();
+                    }
+                    songPath = files[x];
+                    LastSong.Add(files[x]);
+
+                    Console.WriteLine(songPath);
+
+                    player = new SoundPlayer(songPath);
+                    player.Play();
+                    this.musicPlay = true;
+
+                    AudioManager.SetMasterVolume(10);
+                    AudioManager.SetMasterVolumeMute(true);
+
+                    ok = true;
+                }
+                else if(x < files.Count-1)
+                {
+                    x++;
+                }
+                else
+                {
+                    Console.WriteLine("Toutes les musiques on été joué ça m'ennuie");
+                    ok = true;
+                }
+            }
+            while (ok == false);
+            
         }
 
         public void Draw(Graphics G)
         {
-
-            AudioManager.SetMasterVolume(100);
-            AudioManager.SetMasterVolumeMute(false);
-
             Brush brush = new SolidBrush(Color.Black);
 
             G.DrawImage(image,new Point(this.px,this.py));
             G.DrawString(this.Name, new Font("Impact", 12),brush,(this.px+image.Width/2)-30,this.py-20);
-
-
 
         }
 

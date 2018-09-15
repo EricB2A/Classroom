@@ -18,8 +18,18 @@ C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Classroo
 C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Classroom.csproj.CoreCompileInputs.cache
 C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Fractales.exe
 C:\Users\jason.crisante\source\repos\Classroom2\Classroom\obj\x86\Debug\Fractales.pdb
+<<<<<<< HEAD
 C:\Temp\Classroom\Classroom\obj\x86\Debug\Classroom.Properties.Resources.resources
 C:\Temp\Classroom\Classroom\obj\x86\Debug\Classroom.exe
 C:\Temp\Classroom\Classroom\obj\x86\Debug\Classroom.pdb
 C:\Temp\Classroom\Classroom\bin\Debug\Classroom.exe
 C:\Temp\Classroom\Classroom\bin\Debug\Classroom.pdb
+=======
+C:\Git\226\Commun\Classroom\obj\x86\Debug\Classroom.csprojAssemblyReference.cache
+C:\Git\226\Commun\Classroom\obj\x86\Debug\Classroom.Form1.resources
+C:\Git\226\Commun\Classroom\obj\x86\Debug\Fractales.Properties.Resources.resources
+C:\Git\226\Commun\Classroom\obj\x86\Debug\Classroom.csproj.GenerateResource.cache
+C:\Git\226\Commun\Classroom\obj\x86\Debug\Classroom.csproj.CoreCompileInputs.cache
+C:\Git\226\Commun\Classroom\obj\x86\Debug\Fractales.exe
+C:\Git\226\Commun\Classroom\obj\x86\Debug\Fractales.pdb
+>>>>>>> 8d2070fbc5ff2be819e9b3f9961e114670ec0965
